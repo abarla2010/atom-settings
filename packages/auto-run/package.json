@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+        "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-118826-14667-jc9j1t.p6erbpgb9"
+    ]
+  ],
+  "_from": "../d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+  "_id": "auto-run@0.2.1",
+  "_inCache": true,
+  "_location": "/auto-run",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+    "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+  "_shasum": "dc83bbb02d1fdb62ecc6f16bda64a48eadf7ef3b",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14667-1tlioyw.be6x6tuik9/package.tgz",
+  "_where": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-118826-14667-jc9j1t.p6erbpgb9",
+  "bugs": {
+    "url": "https://github.com/aki77/atom-auto-run/issues"
+  },
+  "dependencies": {},
+  "description": "When Atom finishes loading, it will dispatch.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/aki77/atom-auto-run#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "auto-run",
+  "optionalDependencies": {},
+  "providedServices": {
+    "auto-run": {
+      "description": "",
+      "versions": {
+        "0.1.0": "provideAutoRun"
+      }
+    }
+  },
+  "readme": "# auto-run package\n\nWhen Atom finishes loading, it will dispatch.\n[![Build Status](https://travis-ci.org/aki77/atom-auto-run.svg)](https://travis-ci.org/aki77/atom-auto-run)\n\n## Settings\n\n* `commands` (default: [])\n* `devCommands` (default: [])\n\n[![Gyazo](http://i.gyazo.com/31adbe6b7752f58b80fa72eb1d18bae9.png)](http://gyazo.com/31adbe6b7752f58b80fa72eb1d18bae9)\n\n## API\n\nThis package provides a service that you can use in other Atom packages.\n\nThen, in your package's main module, call methods on the service:\n\n```coffee\nmodule.exports =\n  config:\n    autoRun:\n      type: 'boolean'\n      default: false\n      description: 'Requirement: auto-run package'\n\n  activate: ->\n    @subscriptions = new CompositeDisposable\n    @subscriptions.add atom.commands.add 'atom-workspace',\n      'my-package:start': => @start()\n\n  activateConfig: ->\n    pack = atom.packages.getActivePackage('auto-run')\n    return unless pack\n\n    autoRun = pack.mainModule.provideAutoRun()\n    autoRun.registerCommand(\n      keyPath: 'my-package.autoRun'\n      command: 'my-package:start'\n    )\n```\n\n`package.json`\n\n```json\n{\n  \"name\": \"my-package\",\n  \"activationCommands\": {\n    \"atom-workspace\": [\"my-package:start\"]\n  }\n}\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aki77/atom-auto-run.git"
+  },
+  "version": "0.2.1"
+}

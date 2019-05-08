@@ -1,0 +1,61 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+        "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-11842-63590-19i78t3.t6z7fzuxr"
+    ]
+  ],
+  "_from": "../d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+  "_id": "go-rename@0.3.0",
+  "_inCache": true,
+  "_location": "/go-rename",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+    "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+  "_shasum": "7bf338009ba95dc3f154393804e6af92dac5bf40",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11842-63590-idouxh.uzcfxkcsor/package.tgz",
+  "_where": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-11842-63590-19i78t3.t6z7fzuxr",
+  "bugs": {
+    "url": "https://github.com/redefiance/atom-go-rename/issues"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "description": "Rename identifiers in golang code via the gorename command line tool",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/redefiance/atom-go-rename#readme",
+  "license": "MIT",
+  "main": "./lib/go-rename",
+  "name": "go-rename",
+  "optionalDependencies": {},
+  "readme": "# go-rename package\nRename identifiers in golang code via the gorename command line tool\n\n## Install gorename\n\ngo get -v golang.org/x/tools/cmd/gorename\n\n## Usage\n\nUse the command palette and search for `Go Rename: toggle` or use the default keybinding `alt-r` to rename the identifier under the cursor.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redefiance/atom-go-rename.git"
+  },
+  "version": "0.3.0"
+}

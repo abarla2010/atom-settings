@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+        "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-11841-54328-1v6gk3p.3h6ol59udi"
+    ]
+  ],
+  "_from": "../d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+  "_id": "git-line@0.6.0",
+  "_inCache": true,
+  "_location": "/git-line",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+    "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+  "_shasum": "e108c3bc74493ec720b0e427f95a8f5d2faa262c",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-11841-54328-1e34571.6em7hz1tt9/package.tgz",
+  "_where": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-11841-54328-1v6gk3p.3h6ol59udi",
+  "activationCommands": {
+    "atom-workspace": "git-line:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/joelgardner/git-line/issues"
+  },
+  "dependencies": {
+    "moment": "^2.14.1"
+  },
+  "description": "Displays a tooltip with git-blame information about the currently selected line.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/joelgardner/git-line#readme",
+  "keywords": [
+    "git-blame",
+    "git-line",
+    "line"
+  ],
+  "license": "MIT",
+  "main": "./lib/git-line",
+  "name": "git-line",
+  "optionalDependencies": {},
+  "readme": "# git-line package\n\nAn Atom package that displays `git blame` information about the currently selected line.\n\n### Usage\nUse the keyboard combo `ctrl+alt+cmd+b` to activate a tooltip anchored on the line number in the gutter.  If you do not have line numbers enabled, the tooltip will display in the very top right of the Atom window.  If the line is part of a pushed commit, you may follow a link to view it on Github.\n\n### Issues\n- When the cursored line is scrolled offscreen (i.e., not visible), no tooltip will appear.  Future plans to fix could be to place the tooltip in a position with its anchor-arrow indicating the line is above or below the visible lines.\n\n### Demo\n![Yay](http://i.giphy.com/ZsScWCgdmeSk0.gif \"ctrl+alt+cmd+b\")\n[View demo video](https://www.youtube.com/watch?v=UIL7kGqO0ZM) (turning on CC is helpful)\n\n#### Atom package\n[https://atom.io/packages/git-line](https://atom.io/packages/git-line)\n\n#### Changes\n- 0.5.0\n - Fixed issue for Bitbucket repos where the host text is \"Github\", and opens an incorrect commit URL on Bitbucket\n- 0.4.0\n - Fixed bug that displayed git error when a file was untracked by git\n - Fixed bug with ssh-cloned repos where Github link was unresponsive\n - Fixed bug causing error when the project is not a git repo\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelgardner/git-line.git"
+  },
+  "version": "0.6.0"
+}

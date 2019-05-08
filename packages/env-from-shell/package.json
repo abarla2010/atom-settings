@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+        "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-118826-14314-177qse4.1oxl2fbt9"
+    ]
+  ],
+  "_from": "../d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+  "_id": "env-from-shell@0.3.0",
+  "_inCache": true,
+  "_location": "/env-from-shell",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+    "spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+  "_shasum": "8d73893bdd4cc82784707a1f30e61d9bbc201603",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/d-118826-14314-15uv8if.e84m6xbt9/package.tgz",
+  "_where": "/private/var/folders/xp/hg_y88n16v93t4n93snfpzwm0000gn/T/apm-install-dir-118826-14314-177qse4.1oxl2fbt9",
+  "activationCommands": {
+    "atom-workspace": [
+      "env-from-shell:copy",
+      "env-from-shell:reset"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/aki77/atom-env-from-shell/issues"
+  },
+  "configSchema": {
+    "variables": {
+      "order": 1,
+      "description": "List of environment variables which are copied from the shell.",
+      "type": "array",
+      "default": [
+        "PATH"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "autoRun": {
+      "order": 2,
+      "description": "auto-run package is required.",
+      "type": "boolean",
+      "default": false
+    },
+    "debug": {
+      "order": 99,
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "dependencies": {
+    "consistent-env": "^1.1.2"
+  },
+  "description": "Make Atom use the $PATH set up by the user's shell",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/aki77/atom-env-from-shell#readme",
+  "keywords": [
+    "shell",
+    "path",
+    "env"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "env-from-shell",
+  "optionalDependencies": {},
+  "readme": "# env-from-shell package\n\nMake Atom use the $PATH set up by the user's shell.\n[![Build Status](https://travis-ci.org/aki77/atom-env-from-shell.svg)](https://travis-ci.org/aki77/atom-env-from-shell)\n\nInspired by [exec-path-from-shell.el](https://github.com/purcell/exec-path-from-shell)\n\n## Settings\n\n* `variables`: List of environment variables which are copied from the shell.(default: `['PATH']`)\n* `autoRun`: [auto-run](https://atom.io/packages/auto-run) package is required.(default: `false`)\n\n[![Gyazo](http://i.gyazo.com/d8fcc7c6e830e55735dc9f8fa5aa30a8.png)](http://gyazo.com/d8fcc7c6e830e55735dc9f8fa5aa30a8)\n\n## Commands\n\n* `env-from-shell:copy`\n* `env-from-shell:reset`\n\n## Similar packages\n\n* [atomenv](https://atom.io/packages/atomenv)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aki77/atom-env-from-shell.git"
+  },
+  "version": "0.3.0"
+}

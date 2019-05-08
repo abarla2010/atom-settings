@@ -1,0 +1,24 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor: {}
+  "env-from-shell":
+    autoRun: true
+    variables: [
+      "PATH"
+      "ENVIRONMENT_NAME"
+    ]
+  "exception-reporting":
+    userId: "7f4c02ab-1312-4314-af9b-b505deb6725b"
+  "git-blame":
+    columnWidth: 481
+  "go-plus":
+    config: {}
+  "linter-ui-default":
+    panelHeight: 300
+  "terminal-plus":
+    toggles: {}
